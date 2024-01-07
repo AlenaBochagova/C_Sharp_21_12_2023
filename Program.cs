@@ -1,11 +1,23 @@
-﻿// Напишите программу, которая на вход принимает два целых числа и проверяет, является ли первое число квадратом второго.
+﻿// 1.напишите программу, которая принимает на вход число
+ // и проверяет, кратно ли оно одновременно 7 и 23.
 
-Console.Write("Enter a number 1: ");
-int b1 = Convert.Tolnt32 (Console.ReadLine()!);
-Console.Write("Enter a number 2: ");
-int b2 = Convert.Tolnt32(Console.ReadLine()!);
+ using System;
 
-if (b2 *b2 == b1)
-    Console.WriteLine ("Yes");
-else
-    Console.WriteLine ("No");
+ class Program
+
+ {
+    static void Main ()
+    {
+        Console.Write("введите число a: ");
+        int a = Console.Tolnt32(Console.ReadLine());
+
+        if (a % 7 == 0 && a % 23 == 0)
+        {
+            Console.WriteLine("yes");
+        }
+        else
+        {
+            Console.WriteLine("no");
+        }
+    }  
+ }
